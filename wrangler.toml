@@ -1,0 +1,17 @@
+name = "cloudnote-realtime"
+main = "worker/index.js"
+compatibility_date = "2024-04-20"
+
+[[durable_objects.bindings]]
+name = "NOTES"
+class_name = "NoteDurableObject"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["NoteDurableObject"]
+
+[ai]
+binding = "AI"
+
+[vars]
+AI_API_TOKEN = "YOUR_API_TOKEN"
