@@ -55,7 +55,7 @@
     }
 
     function connectWebSocket() {
-      socket = new WebSocket(`wss://cloudnote-collab.tevan-raj.workers.dev/ws/${noteId}`);
+      socket = new WebSocket(`wss://cloudnote-realtime.tevan-raj.workers.dev/ws/${noteId}`);
       socket.onmessage = e => {
         const { content } = JSON.parse(e.data);
         document.getElementById("note").value = content;
