@@ -30,7 +30,8 @@
 
   <script>
     let noteId = "", socket;
-    const baseUrl = "https://cloudnote-collab.tevan-raj.workers.dev";
+    const baseUrl = "https://cloudnote-realtime.tevan-raj.workers.dev";
+
 
     function createNote() {
       fetch(baseUrl + "/api/note/create", { method: "POST" })
